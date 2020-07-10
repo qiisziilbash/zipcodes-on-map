@@ -14,6 +14,7 @@ us_data <- read.delim('./Data/US/US.txt')
 us_data <- select(us_data, c(2,10,11))
 us_data <- rename(us_data, zip = X99553, y = X54.143, x = X.165.7854)
 
+# read some random zipcodes
 zipcodes <- read.csv('./Data/zipcodes.csv')
 zipcodes <- rename(zipcodes, zip = x)
 
